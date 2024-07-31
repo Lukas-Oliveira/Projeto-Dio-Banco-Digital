@@ -1,18 +1,15 @@
 package dio.innovation.bancodigital.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Cliente {
     private String nome;
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     @Override
     public String toString() {
-        return getNome();
+        return nome;
     }
 }
